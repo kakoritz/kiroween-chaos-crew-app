@@ -1,0 +1,51 @@
+{
+  "name": "haunt",
+  "version": "0.1.0",
+  "displayName": "Haunt",
+  "description": "Stress-test an agent workflow with creature faults and load ramps, watch it in a haunted arena, and get a graded report plus a hardening spec from a reviewer agent.",
+  "author": "kakoritz",
+  "minKiroCrewVersion": "0.1.0",
+  "tags": ["testing", "resilience", "chaos", "agents"],
+  "highlights": [
+    "Graded fault sweeps and load ramps against any workflow with a haunt.yaml",
+    "Reviewer agent turns a run log into a postmortem and a hardening spec",
+    "Arena page replays the run as a haunted scene",
+    "Runs offline against local mock servers bound to 127.0.0.1"
+  ],
+  "defaultEnabled": false,
+  "platform": { "os": ["macos", "linux", "windows"] },
+  "skills": ["skills/stress-test-my-workflow"],
+  "agents": ["agents/reviewer.json"],
+  "mcpServers": {
+    "haunt": {
+      "command": "node",
+      "args": ["tools/run-ts.mjs", "packages/core/src/bin/haunt-mcp.ts"],
+      "autoApprove": ["haunt_define", "haunt_report"]
+    }
+  },
+  "permissions": {
+    "api": [],
+    "events": [],
+    "network": false,
+    "storage": true
+  },
+  "dependencies": {
+    "commands": ["node"]
+  },
+  "ui": {
+    "pages": [
+      {
+        "route": "/apps/haunt",
+        "label": "Haunt Arena",
+        "icon": "Ghost",
+        "entry": "page/index.html"
+      }
+    ]
+  },
+  "useCases": [
+    "Find the stage where your workflow double-charges, drops or repeats work, then get a spec that fixes it."
+  ],
+  "configuration": [
+    "Run from a checkout of this repository: the MCP server starts with node and needs npm install done once. Nothing is installed or enabled automatically."
+  ]
+}

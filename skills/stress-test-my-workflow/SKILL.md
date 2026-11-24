@@ -1,6 +1,6 @@
 ---
 name: stress-test-my-workflow
-description: Stress-test a workflow with Haunt. Use when the user wants to find how a workflow breaks under faults or load, get a grade, and get a hardening spec.
+description: Stress-test a workflow with Chaos Kiroween Chaos. Use when the user wants to find how a workflow breaks under faults or load, get a grade, and get a hardening spec.
 ---
 
 # Stress-test my workflow

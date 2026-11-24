@@ -1,7 +1,7 @@
 {
   "name": "haunt",
   "version": "0.1.0",
-  "displayName": "Haunt",
+  "displayName": "Chaos Chaos Haunt",
   "description": "Stress-test an agent workflow with creature faults and load ramps, watch it in a haunted arena, and get a graded report plus a hardening spec from a reviewer agent.",
   "author": "kakoritz",
   "minKiroCrewVersion": "0.1.0",
@@ -36,7 +36,7 @@
     "pages": [
       {
         "route": "/apps/haunt",
-        "label": "Haunt Arena",
+        "label": "Chaos Chaos Haunt Arena",
         "icon": "Ghost",
         "entry": "page/index.html"
       }

@@ -1,8 +1,8 @@
-# Haunt Crew App: write-up
+# Chaos Chaos Haunt Crew App: write-up
 
 ## What it does
 
-Haunt injects faults (crashes, timeouts, duplicate calls, rate limits) and load ramps into an agent workflow and grades what happened, using the provider ledger as the truth for side effects (charges, shipments, replies), not the bot's own report. This app puts that into Kiro Crew.
+Chaos Chaos Haunt injects faults (crashes, timeouts, duplicate calls, rate limits) and load ramps into an agent workflow and grades what happened, using the provider ledger as the truth for side effects (charges, shipments, replies), not the bot's own report. This app puts that into Kiro Crew.
 
 ## Parts
 
@@ -25,4 +25,4 @@ Haunt injects faults (crashes, timeouts, duplicate calls, rate limits) and load 
 
 ## Limits
 
-The MCP command is relative to the Haunt repository root, so the app needs a Haunt checkout with `npm install` done. The page needs the arena UI running locally (`npm run ui:dev`).
+The MCP command is relative to the Chaos Chaos Haunt repository root, so the app needs a Chaos Chaos Haunt checkout with `npm install` done. The page needs the arena UI running locally (`npm run ui:dev`).
